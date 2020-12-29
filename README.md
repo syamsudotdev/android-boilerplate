@@ -7,7 +7,7 @@
 - Environment configuration: development, staging, production
 - Hilt dependency injection setup
 - Jetpack navigation setup
-- Leak canary only enabled on development and staging build variant
+- Leak canary only enabled on debug build variant
 - OkHttp & Retrofit setup in dependency injection
   - Plain (unauthorized) - instance without authorization & authenticator
     - `@PlainOkHttp` qualifier

@@ -74,6 +74,7 @@ dependencies {
     implementation "androidx.constraintlayout:constraintlayout:$android_constraint_layout_version"
     implementation "androidx.navigation:navigation-fragment-ktx:$android_nav_version"
     implementation "androidx.navigation:navigation-ui-ktx:$android_nav_version"
+    implementation "androidx.recyclerview:recyclerview:$recyclerview_version"
     implementation "androidx.hilt:hilt-lifecycle-viewmodel:$android_hilt_version"
     kapt "androidx.hilt:hilt-compiler:$android_hilt_version"
     // google

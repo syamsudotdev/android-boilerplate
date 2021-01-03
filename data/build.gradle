@@ -16,8 +16,8 @@ android {
         versionCode rootProject.ext.version_code
         versionName rootProject.ext.version_name
 
-        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        consumerProguardFiles "consumer-rules.pro"
+        testInstrumentationRunner 'androidx.test.runner.AndroidJUnitRunner'
+        consumerProguardFiles 'consumer-rules.pro'
     }
 
     buildTypes {
@@ -41,14 +41,14 @@ android {
 
         development {
             dimension 'environment'
-            versionNameSuffix "-dev"
+            versionNameSuffix '-dev'
             buildConfigField('String', 'BASE_URL', '"https://example.com"')
             buildConfigField('boolean', 'IS_PRODUCTION', 'false')
         }
 
         staging {
             dimension 'environment'
-            versionNameSuffix "-staging"
+            versionNameSuffix '-staging'
             buildConfigField('String', 'BASE_URL', '"https://example.com"')
             buildConfigField('boolean', 'IS_PRODUCTION', 'false')
         }

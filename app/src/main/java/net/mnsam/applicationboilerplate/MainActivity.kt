@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         val navHostFragment =
             supportFragmentManager.findFragmentById(R.id.fragment_navigation_view) as NavHostFragment
         navController = navHostFragment.navController
-        appBarConfiguration = AppBarConfiguration.Builder()
+        appBarConfiguration = AppBarConfiguration.Builder(R.id.home_fragment_destination)
             .setFallbackOnNavigateUpListener {
                 finish()
                 return@setFallbackOnNavigateUpListener true

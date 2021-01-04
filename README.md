@@ -21,10 +21,12 @@
 - SharedPreferences setup in dependency injection
 - Single activity application
 
+## Jetpack navigation boilerplate examples
+- Bottom navigation with jetpack navigation boilerplate on branch [bottom-navigation-example](https://github.com/samsunoor/android-boilerplate/tree/bottom-navigation-example)
+
 ## TODO
-- Bottom navigation with Jetpack navigation boilerplate
+- Navigation drawer with jetpack navigation boilerplate
 - MVP architecture pattern boilerplate
-- Navigation drawer with Jetpack navigation boilerplate
 - MVP unit testing complete sample
 - MVVM unit testing complete sample
 

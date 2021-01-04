@@ -4,11 +4,9 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/tv_hello_world"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_list_team"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:text="Hello, World!\nI am Home Fragment" />
+        android:layout_height="wrap_content" />
 
 </LinearLayout>

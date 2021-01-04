@@ -92,6 +92,8 @@ dependencies {
     implementation "com.intuit.sdp:sdp-android:$intuit_sdp_version"
     // leak detector
     debugImplementation "com.squareup.leakcanary:leakcanary-android:$leak_canary_version"
+    // local module
+    implementation project(':data')
     // test
     testImplementation "junit:junit:$junit_version"
     testImplementation "io.mockk:mockk:$mockk_version"

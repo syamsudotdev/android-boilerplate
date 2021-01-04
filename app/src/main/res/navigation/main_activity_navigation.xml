@@ -7,8 +7,8 @@
 
     <fragment
         android:id="@+id/home_fragment_destination"
-        android:name="net.mnsam.applicationboilerplate.feature.HomeFragment"
+        android:name="net.mnsam.applicationboilerplate.feature.premierleague.ListPremierTeamFragment"
         android:label="@string/home_title"
-        tools:layout="@layout/home_fragment" />
+        tools:layout="@layout/list_team_fragment" />
 
 </navigation>

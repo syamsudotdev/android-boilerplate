@@ -1,4 +1,4 @@
-package net.mnsam.data.di.core
+package net.mnsam.core
 
 import dagger.Binds
 import dagger.Module

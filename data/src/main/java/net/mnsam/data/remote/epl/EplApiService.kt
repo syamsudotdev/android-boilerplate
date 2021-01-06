@@ -1,4 +1,4 @@
-package net.mnsam.data.remote
+package net.mnsam.data.remote.epl
 
 import retrofit2.http.GET
 import retrofit2.http.Path

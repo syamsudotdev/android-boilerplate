@@ -1,15 +1,15 @@
-package net.mnsam.applicationboilerplate.feature.premierleague
+package net.mnsam.applicationboilerplate.feature.premierleague.ui
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.recyclerview.widget.DiffUtil
+import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import net.mnsam.applicationboilerplate.databinding.ListTeamItemBinding
 import net.mnsam.data.domain.TeamDetail
 
-class PremierTeamAdapter : RecyclerView.Adapter<PremierTeamAdapter.ViewHolder>() {
-
-    private var teamDetails = listOf<TeamDetail>()
+class PremierTeamAdapter : ListAdapter<TeamDetail, PremierTeamAdapter.ViewHolder>(DiffCallback()) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val inflater = LayoutInflater.from(parent.context)
@@ -18,14 +18,7 @@ class PremierTeamAdapter : RecyclerView.Adapter<PremierTeamAdapter.ViewHolder>()
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.bind(teamDetails[position])
-    }
-
-    override fun getItemCount() = teamDetails.size
-
-    fun setList(teamDetails: List<TeamDetail>) {
-        this.teamDetails = teamDetails
-        notifyDataSetChanged()
+        holder.bind(getItem(position))
     }
 
     inner class ViewHolder(private val listTeamItemBinding: ListTeamItemBinding) :
@@ -41,5 +34,16 @@ class PremierTeamAdapter : RecyclerView.Adapter<PremierTeamAdapter.ViewHolder>()
                     .into(ivTeamBadge)
             }
         }
+    }
+
+    private class DiffCallback : DiffUtil.ItemCallback<TeamDetail>() {
+        override fun areItemsTheSame(oldItem: TeamDetail, newItem: TeamDetail): Boolean {
+            return oldItem == newItem
+        }
+
+        override fun areContentsTheSame(oldItem: TeamDetail, newItem: TeamDetail): Boolean {
+            return oldItem == newItem
+        }
+
     }
 }

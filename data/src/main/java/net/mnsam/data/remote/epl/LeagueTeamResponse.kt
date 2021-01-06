@@ -1,4 +1,4 @@
-package net.mnsam.data.remote
+package net.mnsam.data.remote.epl
 
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass

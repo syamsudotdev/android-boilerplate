@@ -1,7 +1,7 @@
 package net.mnsam.data.mapper
 
 import net.mnsam.data.domain.TeamDetail
-import net.mnsam.data.remote.TeamDetailResponse
+import net.mnsam.data.remote.epl.TeamDetailResponse
 
 fun TeamDetailResponse.toTeamDetail(): TeamDetail {
     return TeamDetail(

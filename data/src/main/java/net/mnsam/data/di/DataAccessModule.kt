@@ -10,8 +10,8 @@ import dagger.hilt.InstallIn
 import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import net.mnsam.data.BuildConfig
-import net.mnsam.data.repository.EplTeamRepository
-import net.mnsam.data.repository.impl.EplTeamRepositoryImpl
+import net.mnsam.data.repository.premierleague.EplTeamRepository
+import net.mnsam.data.repository.premierleague.EplTeamRepositoryImpl
 
 @Module
 @InstallIn(SingletonComponent::class)
